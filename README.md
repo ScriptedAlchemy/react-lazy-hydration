@@ -39,6 +39,10 @@ function App() {
       <LazyHydrate on="click" /*OR on={["click","mouseenter",...]} */>
         {...}
       </LazyHydrate>
+      {/* Will not wrap component in div, you cannot use noWrapper if there is no parent div, like at the root of an app */}
+      <LazyHydrate noWrapper/>
+        {...}
+      </LazyHydrate>
     </div>
   );
 }
